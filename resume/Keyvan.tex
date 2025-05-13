@@ -1,0 +1,146 @@
+\documentclass[10pt, a4paper]{article} % 10pt base font
+
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref} % Use hidelinks
+\usepackage{url}
+\usepackage{fontawesome5}
+\usepackage{academicons} % For GitHub icon alternative
+
+% Custom colors
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+% \definecolor{headingcolor}{HTML}{2980B9} % Not used
+
+% Margins for A4
+\usepackage[left=0.7in, right=0.7in, top=0.5in, bottom=0.5in, paper=a4paper]{geometry}
+
+% Spacing adjustments
+\usepackage{enumitem}
+% Very tight list spacing
+\setlist{nosep, itemsep=0pt, topsep=1pt, partopsep=0pt, parsep=0pt, leftmargin=*}
+\usepackage{array} % Required for >{} column specifier in tabular
+
+% Custom command for contact information
+\newcommand{\contactinfo}{
+    \vspace{-0.15in}
+    \begin{center}
+    \footnotesize % Use footnotesize for compactness
+    \faLinkedin~\href{https://linkedin.com/in/keyvanmsadeghi}{linkedin.com/in/keyvanmsadeghi} ~
+    \faGithub~\href{https://github.com/keyvan-m-sadeghi}{github.com/keyvan-m-sadeghi} ~
+    \faEnvelope~\href{mailto:keyvan.m.sadeghi@gmail.com}{keyvan.m.sadeghi@gmail.com} ~
+    \faPhone\href{tel:+14168598984}{+1 416-859-8984} ~
+    \faMapMarker ~ Toronto, Ontario, Canada ~~
+    \faPlane ~ Open to Relocate/Remote
+    \end{center}
+    \vspace{-0.1in} % Slightly reduced bottom space
+}
+
+% Command for Skills table
+\newcommand{\skillsentry}[2]{
+    \vspace{1pt}
+    \noindent\textbf{#1} & #2 \\
+}
+
+% Section headings formatting
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{*1.5}{*0.5} % Adjusted spacing slightly: {left}{before}{after}
+\titleformat{\section}{\normalfont\fontsize{11}{13}\bfseries\MakeUppercase}{}{0em}{} % Standard format
+
+
+\begin{document}
+\pagestyle{empty} % Remove page numbers
+
+\begin{center}
+    \LARGE\textbf{Keyvan M. Sadeghi}
+\end{center}
+\vspace{-0.15in}
+\begin{center}
+    \fontsize{11}{13}\selectfont \textbf{Senior AI Solutions Architect} % Your updated title
+\end{center}
+\contactinfo
+
+\section*{Summary}
+\vspace{-4pt}\rule{\textwidth}{0.4pt}\vspace{2pt} % Add manual rule
+\small{ % Summary content remains small
+Results-oriented AI/ML leader \& architect with 10+ years of experience in designing, building, and managing the end-to-end delivery of complex AI solutions (LLMs, RAG, Agents) and distributed systems.
+Proven expertise in project planning, execution, risk mitigation, and process improvement within agile frameworks, supporting engineering and product teams to deliver high-performance computing and AI libraries.
+Adept at translating complex requirements into technical strategy and actionable plans, fostering collaboration across geographically distributed teams, and leveraging data analysis to drive operational efficiencies.
+Expertise in AI/ML system architecture, MLOps, cloud infrastructure, and AI platform optimization.
+}
+\vspace{3pt} % Adjusted space after summary
+
+\section*{Education}
+\vspace{-4pt}\rule{\textwidth}{0.4pt}\vspace{2pt} % Add manual rule
+
+\noindent\textbf{University of Southampton, UK} \hfill \small{2010 – 2012} \\
+\noindent \textit{MSc, Artificial Intelligence – Grade: Distinction}
+\vspace{3pt} % Adjusted space after education
+
+\section*{Experience}
+\vspace{-4pt}\rule{\textwidth}{0.4pt}\vspace{2pt} % Add manual rule
+
+\noindent\textbf{Co-founder, CEO / CSO} \hfill \small\textit{Jan 2021 – Present} \\
+\noindent\textit{Functionland} \hfill \small\textit{Toronto, ON}
+\vspace{1pt}
+\begin{itemize}[label=\tiny\textbullet]
+    \item Architected decentralized AI solutions; deployed fine-tuned LLMs (DeepSeek R1) on edge devices (RK3588/TPU) across 1k+ deployed nodes (1PB+ storage).
+    \item Developed RAG systems \& agentic frameworks, managing stakeholder relationships with partners (Fetch.ai) \& enterprise clients; co-designed distinctive hardware (FxBlox) with Yves Béhar enabling versatile edge computing use cases.
+    \item Led technical strategy, managed budgets, grew and managed core/contractor team (to 70+ at peak), scaled production infra; secured \$500k+ crowdfunding \& \$1.1M seed round; deployed 3 consumer apps (Google Play/Apple App Store).
+    \item Established CI/CD (GitHub Actions), MLOps processes, monitoring, and system maintenance for AI workloads.
+\end{itemize}
+
+\vspace{3pt} % Adjusted space between entries
+\noindent\textbf{Principal Software Engineer} \hfill \small\textit{Dec 2018 – Aug 2021} \\
+\noindent\textit{Assister Technology Ltd} \hfill \small\textit{Toronto, ON}
+\vspace{1pt}
+\begin{itemize}[label=\tiny\textbullet]
+    \item Revamped client applications with React/Native front-ends, Node.js/Go back-ends, and NoSQL/SQL databases.
+    \item Led design/development of Python-based conversational AI platform (Transformer models, PyTorch) for enterprise clients, incorporating formal project planning/tracking \& managing stakeholder relations.
+    \item Deployed scalable cloud-native apps (AWS) using CI/CD (GH Actions), driving operational process improvements.
+    \item Provided architectural guidance for AI solutions; chaired W3C FKG group, drafting specs for web-Agent communication.
+\end{itemize}
+
+\vspace{3pt} % Adjusted space between entries
+\noindent\textbf{Lead AI Architect} \hfill \small\textit{Oct 2014 – Nov 2018} \\
+\noindent\textit{Mahan Air, MAPS Ventures} \hfill \small\textit{Tehran, Iran}
+\vspace{1pt}
+\begin{itemize}[label=\tiny\textbullet]
+    \item Scaled and managed AI/Analytics team (from 2 to over 20 engineers), implementing Agile methodologies (Scrum/Kanban), creating project status dashboards, and developing process documentation; established technical direction.
+    \item Spearheaded project leveraging ML to automate fleet assignment, showcasing AI's potential in aviation operations.
+    \item Applied Agile principles to shape architectures (incl. Spark, Neo4j) \& tech stacks (Python, Node.js).
+\end{itemize}
+
+\vspace{3pt} % Adjusted space between entries
+\noindent\textbf{AGI Researcher} \hfill \small\textit{Feb 2012 – Sep 2014} \\
+\noindent\textit{Hong Kong Polytechnic University} \hfill \small\textit{Hong Kong}
+\vspace{1pt}
+\begin{itemize}[label=\tiny\textbullet]
+    \item Programmed AI Agents embodied in a Unity 4.0 game simulation, defining objective and memory for NPCs.
+    \item Published four papers on cognitive architectures, advanced AI reasoning (spatio-temporal), and genetic algorithms.
+\end{itemize}
+\vspace{3pt} % Adjusted space after last entry
+
+\section*{Skills}
+\vspace{-4pt}\rule{\textwidth}{0.4pt}\vspace{2pt}
+\small{
+\begin{tabular}{@{} >{\bfseries}p{0.27\textwidth} p{0.705\textwidth} @{}} % Adjusted column widths slightly
+    Program \& Project Management & Agile (Scrum, Kanban), Project Planning \& Execution, End-to-End Delivery, Risk Management, Stakeholder Management, Process Improvement, Resource Planning, Operational Efficiency, Data Analysis \& Presentation, Reporting \& Forecasting \\
+    PM Tools & Jira, Confluence, Microsoft Excel (Expert), Microsoft Project (familiarity), Data Visualization (e.g., Power BI concepts), Git, GitHub \\
+    AI / ML & LLMs (Deployment, RAG, Agents), NLP, Transformers, PyTorch, MLOps, Model Evaluation, High-Performance Computing (HPC) concepts, GPU Software Development concepts, AI/Math/Computer Vision Library concepts \\
+    Cloud \& DevOps & AWS, GCP, Azure (familiarity), Kubernetes, Docker, CI/CD (GitHub Actions, Azure DevOps), Distributed Systems, Performance Tuning, Monitoring, IaC concepts \\
+    Software Dev \& Architecture & Python (Expert), Node.js, JavaScript/TypeScript, System Design, Microservices \\
+    Leadership \& Comms & Team Leadership, Cross-Functional Collaboration, Mentorship, Excellent Written/Verbal Communication, Conflict Resolution, Training Material Development \\
+\end{tabular}
+}
+
+\section*{Publications / References} % Kept References section
+\vspace{-4pt}\rule{\textwidth}{0.4pt}\vspace{4pt} % Add manual rule with consistent width
+\small{ % Added small formatting for consistency
+Papers accessible from \href{https://scholar.google.com/citations?user=aVLwjvYAAAAJ}{\underline{this link}}. Reference letters available for download at \href{https://drive.google.com/drive/folders/17ZoqIKTMermg7flDVFVwqN4IesXFgBvo?usp=sharing}{\underline{this link}}.
+}
+\vspace{4pt}
+
+\end{document}
