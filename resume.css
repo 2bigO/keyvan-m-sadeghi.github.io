@@ -70,3 +70,84 @@ a#pdf:hover { background: #222; }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
+
+/* Keep the original serif resume and section rails; adapt them to modern screens. */
+body { font-family: Georgia, "Times New Roman", serif; font-size: 15px; line-height: 1.6; }
+#doc2 { width: min(1080px, 100%); }
+#inner { padding: 10px 48px; }
+#hd .yui-gc { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; }
+#hd .yui-u { width: auto; float: none; }
+#hd h1 { font-size: 32px; letter-spacing: 2px; line-height: 1.25; }
+#hd .subtitle { margin-top: 10px; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; }
+#hd .location { margin-top: 4px; color: #666; }
+.contact-info { font-size: 13px; width: max-content; max-width: 100%; }
+#hd .contact-info { width: max-content; max-width: 100%; }
+.contact-info p { margin: 0 0 3px; }
+p { padding-right: 0; line-height: 1.65; margin: 0 0 1em; }
+p.enlarge { padding-right: 0; font-size: 21px; line-height: 1.5; }
+.yui-gf { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 28px; }
+.yui-gf::after, #hd .yui-gc::after { display: none; }
+.yui-gf .yui-u, .yui-gf div.first { width: auto; float: none; min-width: 0; }
+.first h2 { font-size: 20px; line-height: 1.4; }
+h3 { font-size: 20px; line-height: 1.4; }
+.job { padding-bottom: 20px; margin-bottom: 24px; }
+.job.last { padding-bottom: 0; margin-bottom: 0; }
+.job p, .job p:last-child { margin: 12px 0 0; }
+.job .role { margin-top: 4px; font-size: 16px; }
+.job .dates { margin-top: 3px; color: #666; font-size: 13px; }
+.highlights { margin: 14px 0 0; padding-left: 20px; }
+.highlights li { list-style: disc; border: 0; line-height: 1.6; margin-bottom: 8px; }
+.research-question { border-left: 2px solid #990003; padding-left: 18px; font-size: 18px; font-style: italic; }
+.publication { margin-bottom: 22px; }
+.publication:last-child { margin-bottom: 0; }
+.publication h3 { font-size: 17px; }
+.publication p { font-size: 13px; margin: 5px 0 0; color: #666; }
+.technical-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+.talent { width: auto; float: none; }
+.talent h3 { font-size: 16px; margin-bottom: 8px; }
+.talent p { font-size: 14px; margin-bottom: 0; }
+.secondary { color: #666; font-size: 14px; }
+code { font-size: .95em; }
+a { text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible { outline: 2px solid #990003; outline-offset: 4px; }
+.print-link { color: #990003; background: none; border: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; font: inherit; margin-top: 6px; }
+.skip-link { position: absolute; left: 16px; top: -100px; background: white; padding: 8px; z-index: 1; }
+.skip-link:focus { top: 8px; }
+#ft { font-size: 13px; }
+
+@media (max-width: 720px) {
+    #inner { padding: 8px 24px; }
+    #hd { margin: 24px 0 32px; }
+    #hd .yui-gc { grid-template-columns: 1fr; gap: 14px; }
+    #hd h1 { font-size: 28px; }
+    .contact-info { margin-top: 0; }
+    .yui-gf { grid-template-columns: 1fr; gap: 14px; margin-bottom: 26px; padding-bottom: 26px; }
+    .first h2 { color: #666; }
+    p.enlarge { font-size: 20px; }
+    .technical-grid { grid-template-columns: 1fr; gap: 18px; }
+}
+
+@media print {
+    @page { margin: 16mm; }
+    body { font-size: 10pt; color: #222; }
+    #doc2 { width: 100%; }
+    #inner { padding: 0; }
+    #hd { margin: 0 0 20px; }
+    #hd h1 { font-size: 24px; }
+    .yui-gf { grid-template-columns: 85px minmax(0, 1fr); gap: 18px; margin-bottom: 18px; padding-bottom: 18px; }
+    .yui-gf { display: block; }
+    .yui-gf > .first { margin-bottom: 8px; break-after: avoid; }
+    .first h2 { font-size: 14px; }
+    h3 { font-size: 15px; break-after: avoid; }
+    p.enlarge { font-size: 15px; }
+    .job { margin-bottom: 16px; padding-bottom: 16px; }
+    .job .role { font-size: 12px; }
+    .job .dates, .publication p, .contact-info, .secondary { font-size: 10px; }
+    .publication, .technical-grid, #education-heading { break-inside: avoid; }
+    .job h3, .job .role, .job .dates { break-after: avoid; }
+    .publication h3 { font-size: 12px; }
+    p, li { orphans: 3; widows: 3; }
+    a { color: inherit; }
+    .print-link, .skip-link { display: none; }
+    #ft { padding: 10px 0 0; margin-bottom: 0; }
+}
