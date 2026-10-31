@@ -27,7 +27,8 @@
                     </div>
                     <div class="yui-u contact-info">
                         <p><a href="mailto:keyvan.m.sadeghi@gmail.com">keyvan.m.sadeghi@gmail.com</a></p>
-                        <p><a href="https://github.com/keyvan-m-sadeghi">GitHub</a> &middot; <a href="https://www.linkedin.com/in/keyvanmsadeghi">LinkedIn</a></p>
+                        <p><a href="https://github.com/2bigO">github.com/2bigO</a></p>
+                        <p><a href="https://www.linkedin.com/in/keyvanmsadeghi">LinkedIn: keyvanmsadeghi</a></p>
                         <p><a href="tel:+14168598984">+1 416-859-8984</a></p>
                         <button class="print-link" type="button" onclick="window.print()">Print / save PDF</button>
                     </div>
@@ -39,23 +40,28 @@
                         <section class="yui-gf" aria-labelledby="profile-heading">
                             <div class="yui-u first"><h2 id="profile-heading">Profile</h2></div>
                             <div class="yui-u">
-                                <p class="enlarge">I build the systems around AI: the infrastructure, interfaces, and tools that turn research into something people can use.</p>
-                                <p>My work has taken me from AGI research with OpenCog to conversational assistants, a distributed storage network, and now wireless foundation models at <a href="https://qoherent.ai/">Qoherent</a>. I&rsquo;m an architect who writes code, leads research teams, and likes problems that cross disciplinary boundaries.</p>
-                                <p>These days I&rsquo;m especially interested in how we preserve human intent as coding agents do more of the implementation. That question led to <a href="https://github.com/qoherent/sigil">Sigil</a>, an open-source project bringing software lifecycle discipline to prompts.</p>
+                                <p class="enlarge">AI systems architect, experienced Python programmer, and open-source builder.</p>
+                                <p>At <a href="https://qoherent.ai/">Qoherent</a>, I lead 20 researchers and engineers and architect infrastructure spanning 50 AMD and NVIDIA GPUs. I designed and implemented <a href="https://github.com/qoherent/sigil">Sigil</a> to investigate intent preservation in coding agents. With four peer-reviewed publications and a background in AGI research, I&rsquo;m seeking hands-on empirical work on LLM systems, agent reliability, and scalable oversight.</p>
+                            </div>
+                        </section>
+                        <section class="yui-gf" aria-labelledby="education-heading">
+                            <div class="yui-u first"><h2 id="education-heading">Education</h2></div>
+                            <div class="yui-u">
+                                <h3>University of Southampton, UK</h3>
+                                <p>MSc in Artificial Intelligence, with Distinction &middot; 2010&ndash;2012</p>
                             </div>
                         </section>
                         <section class="yui-gf" aria-labelledby="current-heading">
-                            <div class="yui-u first"><h2 id="current-heading">Current work</h2></div>
+                            <div class="yui-u first"><h2 id="current-heading">Experience</h2></div>
                             <div class="yui-u">
                                 <article class="job last">
                                     <h3><a href="https://qoherent.ai/">Qoherent</a></h3>
                                     <p class="role">Vice President of Software Engineering</p>
                                     <p class="dates">December 2025 &ndash; present</p>
-                                    <p>I lead a team of 20 researchers and engineers, including PhD researchers, developing models for software-defined radio. Our training research spans CNNs and, increasingly, transformers. My focus is the architecture that connects their experiments to usable systems.</p>
+                                    <p>I lead 20 researchers and engineers, including PhD researchers, developing CNN and transformer models for software-defined radio. My focus is the systems architecture connecting training research to usable products.</p>
                                     <ul class="highlights">
-                                        <li>Architecting <a href="https://riahub.ai/">RIAHub</a>, our hub for wireless foundation models: a place to collaborate on RF datasets, train and share models, and package inference applications.</li>
-                                        <li>Building a fleet for local inference and the infrastructure around model development and deployment.</li>
-                                        <li>Developing <a href="https://github.com/qoherent/sigil">Sigil</a> as open source, alongside the team&rsquo;s work on radio intelligence.</li>
+                                        <li>Architecting <a href="https://riahub.ai/">RIAHub</a>, a platform for wireless foundation models spanning RF datasets, model training and sharing, and packaged inference applications.</li>
+                                        <li>Architecting infrastructure for a fleet of 50 AMD and NVIDIA GPUs used for radio-model training and internal inference with open-weight models.</li>
                                     </ul>
                                 </article>
                             </div>
@@ -63,29 +69,27 @@
                         <section class="yui-gf" aria-labelledby="sigil-heading">
                             <div class="yui-u first"><h2 id="sigil-heading">Sigil</h2></div>
                             <div class="yui-u">
-                                <h3>Keeping intent in the codebase</h3>
-                                <p>Long agentic coding sessions can lose the reasons behind earlier decisions. The code survives; the intent gets buried in conversation history. A later change can quietly undo work that mattered.</p>
-                                <p>Sigil makes that intent a versioned artifact. <code>.sigil</code> files live alongside the implementation and describe component boundaries, behavior, and constraints. LLMs interpret local meaning; a deterministic kernel composes admitted claims and checks design coherence and implementation alignment.</p>
+                                <h3>Research project: intent preservation for coding agents</h3>
+                                <p>I designed and implemented Sigil to preserve intent across coding-agent sessions. Versioned <code>.sigil</code> files keep component boundaries, behavior, and constraints alongside source code, giving prompts a software development lifecycle.</p>
+                                <p>My Semantic Worlds architecture translates design and implementation into two separate egglog worlds, applies equality saturation independently, then compares them for discrepancies. Intended behavior stays separate from implementation evidence; checks depend on LLM interpretation.</p>
                                 <p class="research-question">Can explicit design intent help coding agents catch drift and avoid undoing earlier decisions?</p>
-                                <p>That is the hypothesis we&rsquo;re investigating at Qoherent, with a publication targeted for the end of 2026. The repository includes a benchmark with deliberately planted design and implementation problems. The paper is work in progress; the checks operate on admitted interpretations, so their conclusions depend on what those interpretations capture.</p>
-                                <p><a href="https://github.com/qoherent/sigil">Source &amp; documentation</a> &middot; <a href="https://github.com/qoherent/sigil/blob/main/scripts/slotted-benchmark/README.md">Benchmark methodology</a></p>
+                                <p class="evaluation-status">Evaluation is qualitative so far; we are creating datasets for quantitative benchmarking. The repository includes deliberately planted design and implementation problems. A paper with the Qoherent team is targeted for the end of 2026.</p>
+                                <p><a href="https://github.com/qoherent/sigil">github.com/qoherent/sigil</a> &middot; <a href="https://github.com/qoherent/sigil/blob/main/scripts/slotted-benchmark/README.md">Benchmark methodology</a></p>
                             </div>
                         </section>
                         <section class="yui-gf" aria-labelledby="experience-heading">
-                            <div class="yui-u first"><h2 id="experience-heading">Experience</h2></div>
+                            <div class="yui-u first"><h2 id="experience-heading">Earlier experience</h2></div>
                             <div class="yui-u">
                                 <article class="job">
                                     <h3><a href="https://fx.land/">Functionland</a></h3>
                                     <p class="role">Co-founder &amp; CEO; later Chief Science Officer</p>
-                                    <p class="dates">January 2021 &ndash; December 2025 &middot; Board member since December 2025</p>
-                                    <p>I co-founded Functionland to give people ownership of their data and the hardware it runs on. We took FxBlox from an idea to a shipped product and a distributed storage network, working with Yves B&eacute;har and fuseproject on the hardware design.</p>
+                                    <p class="dates">CEO: January 2021 &ndash; August 2024 &middot; CSO: August 2024 &ndash; December 2025<br>Board member since December 2025</p>
+                                    <p>Co-founded <a href="https://outlierventures.io/article/why-we-invested-in-functionland-cloud-storage-for-the-open-metaverse/">Functionland</a> and shipped FxBlox, developing a distributed storage network with hardware designed alongside Yves B&eacute;har and fuseproject.</p>
                                     <ul class="highlights">
                                         <li>Deployed 1,000+ nodes providing more than a petabyte of distributed storage.</li>
                                         <li>Raised over US$2M in venture funding and <a href="https://www.indiegogo.com/en/projects/functionlandinc/box-first-free-forever-cloud-storage-alternative">US$500K in crowdfunding</a> with the founding team.</li>
                                         <li>Architected infrastructure across ARM and x86 systems, with hardware integration, deployment pipelines, and developer tooling.</li>
-                                        <li>Built partnerships with Protocol Labs and Outlier Ventures; participated in the Filecoin Techstars accelerator in 2022.</li>
                                     </ul>
-                                    <p>I served as CEO until August 2024, then Chief Science Officer through December 2025. I remain on the board. <a href="https://outlierventures.io/article/why-we-invested-in-functionland-cloud-storage-for-the-open-metaverse/">Outlier Ventures on Functionland</a>.</p>
                                 </article>
                                 <article class="job">
                                     <h3>Assister.ai</h3>
@@ -124,8 +128,8 @@
                             <div class="yui-u first"><h2 id="research-heading">Research</h2></div>
                             <div class="yui-u">
                                 <h3>From architectures to experiments</h3>
-                                <p>I&rsquo;m interested in empirical work on LLM systems, agent reliability, and scalable oversight: making intent inspectable, measuring when agents depart from it, and building infrastructure for repeatable experiments.</p>
-                                <p>My recent role has been to architect systems and lead researchers training radio models. I bring a long-standing working knowledge of Python and earlier academic lab experience; I&rsquo;m keen to return to hands-on experiments with LLMs and PyTorch.</p>
+                                <p>My research interests are making intent inspectable, measuring when agents depart from it, and building infrastructure for repeatable experiments.</p>
+                                <p>I&rsquo;m an experienced Python programmer with academic lab experience. Today I architect systems and lead researchers training radio models; I want to return to hands-on empirical research focused on LLM systems and PyTorch.</p>
                                 <p class="secondary">Also: Venture Partner at STEM Venture Studio (since March 2026); mentor in Outlier Ventures&rsquo; DePIN Base Camp (2025).</p>
                             </div>
                         </section>
@@ -155,14 +159,7 @@
                             <div class="yui-u technical-grid">
                                 <div class="talent"><h3>Languages &amp; tools</h3><p>Python, JavaScript / TypeScript, Go, C/C++, Deno, CLI and developer tooling.</p></div>
                                 <div class="talent"><h3>Systems</h3><p>Distributed systems, local inference, ARM / x86 deployment, Docker, CI/CD, Apache Spark, graph databases.</p></div>
-                                <div class="talent"><h3>Research &amp; architecture</h3><p>Agent systems, knowledge representation, ML infrastructure, experiment design, research team leadership.</p></div>
-                            </div>
-                        </section>
-                        <section class="yui-gf last" aria-labelledby="education-heading">
-                            <div class="yui-u first"><h2 id="education-heading">Education</h2></div>
-                            <div class="yui-u">
-                                <h3>University of Southampton, UK</h3>
-                                <p>MSc in Artificial Intelligence, with Distinction &middot; 2010&ndash;2012</p>
+                                <div class="talent"><h3>Research &amp; architecture</h3><p>Agent systems, knowledge representation, egglog, equality saturation, ML infrastructure, research team leadership.</p></div>
                             </div>
                         </section>
                     </div>
